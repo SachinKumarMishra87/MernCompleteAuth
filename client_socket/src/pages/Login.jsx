@@ -68,6 +68,7 @@ const Login = () => {
       console.log(error)
       toast.error(error.response.data.message)
     }
+    axios.defaults.withCredentials = true
 
   }
 

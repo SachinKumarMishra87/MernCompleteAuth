@@ -12,7 +12,9 @@ export const AppContextPrpvider = (props) => {
 
     const getAuthState = async () => {
         try {
-            const { data } = await axios.post(`${backendUrl}/api/auth/is-auth`);
+            const { data } = await axios.post(`${backendUrl}/api/auth/is-auth`,{
+                withCredentials: true
+            });
             if (data.success) {
                 setIsLoggedIn(true);
                 getUserData()
