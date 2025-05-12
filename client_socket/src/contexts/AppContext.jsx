@@ -37,6 +37,7 @@ export const AppContextPrpvider = (props) => {
             console.log("data from appconet", data)
         } catch (error) {
             toast.error(error.response.data.message)
+            console.log("error",error)
         }
     }
 
