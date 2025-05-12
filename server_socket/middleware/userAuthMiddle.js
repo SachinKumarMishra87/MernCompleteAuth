@@ -6,7 +6,7 @@ export const userAuth = async (req, res, next) => {
     if (!token) {
         return res.json({
             success: false,
-            message: "Not Authorized. Login Again",
+            message: "Not Authorized. Login Again token nhi milaa",
             error: true
         })
     }
@@ -20,7 +20,7 @@ export const userAuth = async (req, res, next) => {
         } else {
             return res.json({
                 success: false,
-                message: "Not Authorized. Login Again",
+                message: "Not Authorized. Login Again kuch or dikkat",
                 error: true
             })
         }
