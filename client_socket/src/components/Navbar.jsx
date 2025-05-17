@@ -7,7 +7,6 @@ import { toast } from 'react-toastify'
 
 const Navbar = () => {
     const { userData, backendUrl, setUserData, setIsLoggedIn } = useContext(AppContent);
-    console.log(userData)
 
     const navigate = useNavigate();
 

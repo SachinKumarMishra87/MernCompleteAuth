@@ -57,7 +57,6 @@ const ForgotPassword = () => {
                 withCredentials: true
             });
             const { data: responseData } = response
-            console.log(responseData)
             if (responseData.success) {
                 toast.success(responseData.message)
                 navigate("/login")

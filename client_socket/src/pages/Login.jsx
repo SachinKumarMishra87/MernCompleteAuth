@@ -31,7 +31,6 @@ const Login = () => {
           withCredentials: true
         });
         const { data: responseData } = response
-        console.log("response", responseData);
         if (responseData.success) {
           setIsLoggedIn(true)
           getUserData();
@@ -49,7 +48,6 @@ const Login = () => {
           withCredentials: true
         });
         const { data: responseData } = response
-        console.log("response", responseData);
         if (responseData.success) {
           setIsLoggedIn(true)
           getUserData();
@@ -72,8 +70,6 @@ const Login = () => {
 
   }
 
-
-  console.log(data)
   return (
     <div className="flex items-center justify-center min-h-screen px-6 sm:px-0 bg-gradient-to-br from-blue-200 to-purple-400">
       <img src={assets.logo}
@@ -97,7 +93,7 @@ const Login = () => {
                   name="name"
                   value={data.name}
                   onChange={handleChange}
-                  className="outline-none border-none bg-transparent"
+                  className="outline-none border-none bg-transparent w-full"
                 />
               </div>
             )
@@ -112,7 +108,7 @@ const Login = () => {
               name="email"
               value={data.email}
               onChange={handleChange}
-              className="outline-none border-none bg-transparent"
+              className="outline-none border-none bg-transparent w-full"
             />
           </div>
 
@@ -125,7 +121,7 @@ const Login = () => {
               name="password"
               value={data.password}
               onChange={handleChange}
-              className="outline-none border-none bg-transparent"
+              className="outline-none border-none bg-transparent w-full"
             />
           </div>
 

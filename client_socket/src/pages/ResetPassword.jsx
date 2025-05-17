@@ -52,7 +52,6 @@ const ResetPassword = () => {
         withCredentials: true
       });
       const { data: responseData } = response
-      console.log("responseData from ResetPassword", responseData)
       if (responseData.success) {
         toast.success(responseData.message)
         navigate("/forgot-password", { state: { email: email } })
